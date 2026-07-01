@@ -8,6 +8,11 @@
 "누가, 언제, 왜 결제하는가?" 
 (어떤 유저가 고가치 유저가 되며, 이를 사전에 식별할 수 있는가)
 
+## Key Performance Indicators (KPI)
+Conversion Rate: 유저 유입부터 최종 구매까지의 전환 효율
+ARPU / ARPPU: 유저당 평균 결제액 및 결제 유저당 평균 결제액
+Whale Detection Recall: 고가치 유저 식별 모델의 재현율
+
 ## 데이터
 - 파일: `data/raw/mobile_game_inapp_purchases.csv`
 - 주요 컬럼: UserID, Age, Gender, Country, Device, GameGenre, SessionCount,
