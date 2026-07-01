@@ -1,0 +1,57 @@
+project:
+  name: "mobile-game-iap-project"
+  version: "1.0.0"
+
+data:
+  raw_path: "../data/raw/mobile_game_inapp_purchases.csv"
+  processed_path: "../data/processed/processed_data.csv"
+
+funnel:
+  stages:
+    - install
+    - active
+    - engaged
+    - purchase
+  engaged_session_threshold_minutes: 20
+
+cohort:
+  retention_days: [1, 7, 30]
+
+segmentation:
+  spending_segments:
+    minnow_max: 50
+    dolphin_max: 500
+  session_bins: [0, 5, 10, 20, 30, 50, 999]
+  session_labels: ["1-5", "6-10", "11-20", "21-30", "31-50", "51+"]
+
+features:
+  numeric:
+    - Age
+    - SessionCount
+    - AverageSessionLength
+    - FirstPurchaseDaysAfterInstall
+  categorical:
+    - Gender
+    - Device
+    - GameGenre
+    - Country
+    - PaymentMethod
+
+modeling:
+  purchase_prediction:
+    target: "is_whale"
+    test_size: 0.2
+    random_state: 42
+    models:
+      - logistic_regression
+      - xgboost
+  ltv_prediction:
+    target: "InAppPurchaseAmount"
+    test_size: 0.2
+    random_state: 42
+    model: xgboost
+
+output:
+  models_dir: "outputs/models"
+  figures_dir: "outputs/figures"
+  dashboards_dir: "outputs/dashboards"
