@@ -24,10 +24,10 @@ Whale 유저가 전체 매출의 59%를 차지하는 구조를 확인하였으�
 
 ## Key Performance Indicators (KPI)
 
-* **Conversion Rate** = Purchase User / Total User
-* **ARPU (Average Revenue Per User)** = Total Revenue / Total User
-* **ARPPU (Average Revenue Per Paying User)** = Total Revenue / Paying User
-* **Whale Detection Recall** = 실제 Whale 중 모델이 올바르게 식별한 비율
+* **Conversion Rate** = Purchase User / Total User (결제 전환 효율)
+* **ARPU (Average Revenue Per User)** = Total Revenue / Total User (전체 유저당 평균 결제액)
+* **ARPPU (Average Revenue Per Paying User)** = Total Revenue / Paying User (결제 유저당 평균 결제액)
+* **Whale Detection Recall** = 실제 Whale 중 모델이 올바르게 식별한 비율 (고가치 유저 식별력) 
 
 ---
 
