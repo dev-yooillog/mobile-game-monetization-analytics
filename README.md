@@ -29,6 +29,10 @@ Whale Detection Recall: 고가치 유저 식별 모델의 재현율
 ## 분석 구성
 1. **EDA** - 데이터 분포 및 기초 통계
 2. **퍼널 분석** - Install → Active → Engaged → Purchase
+- Install: 앱 설치 및 유입
+- Active: 1회 이상 세션 발생
+- Engaged: 세션 시간 20분 이상 또는 세션 수 5회 이상
+- Purchase: 인앱 결제 완료
 3. **코호트 분석**- 첫 결제 소요일 기반 근사 리텐션
 4. **모델링** - Whale 예측(Logistic/XGBoost), LTV 예측(XGBoost)
 
