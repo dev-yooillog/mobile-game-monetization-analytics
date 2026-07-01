@@ -14,6 +14,13 @@
   AverageSessionLength, InAppPurchaseAmount, SpendingSegment,
   FirstPurchaseDaysAfterInstall, PaymentMethod
 
+## 비즈니스 전략 및 제언 (Action Items)
+분석 결과를 바탕으로 다음과 같은 비즈니스 최적화 전략을 제언
+
+* **고가치 유저(Whale) 타겟 마케팅:** - 전체 매출의 59%를 차지하는 상위 2.2% 유저를 위해 'VIP 전용 프리미엄 패키지' 구성 및 맞춤형 푸시 알림 시행 (ARPU 증대 목표).
+* **결제 전환 최적화 (Funnel Optimization):** - 이탈이 빈번한 구간을 식별하여 해당 구간에서의 '초보자 지원 패키지' 노출을 통해 결제 전환율 5% 개선 목표.
+* **모델 성능 고도화를 위한 데이터 확보:** - 현재 피처만으로는 예측력의 한계가 명확함. 향후 유저별 '게임 내 아이템 클릭 로그', '레벨업 속도', '이벤트 참여 여부' 등 행동 지표를 피처로 추가하여 Whale 조기 식별 정확도 향상 추진.
+
 ## 분석 구성
 1. **EDA** - 데이터 분포 및 기초 통계
 2. **퍼널 분석** - Install → Active → Engaged → Purchase
